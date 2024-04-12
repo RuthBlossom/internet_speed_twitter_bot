@@ -15,3 +15,39 @@ Using a bot to automate interactions, such as complaining about internet speed, 
 
 
 Overall, while it's important to hold service providers accountable for their promises and performance, it should be done in a manner that respects ethical principles, transparency, and fairness to all parties involved. Using bots for complaints should be approached with caution and consideration of these ethical implications.
+
+
+Here's a README for This Internet Speed Twitter Bot:
+
+---
+
+# Internet Speed Twitter Bot
+
+## Overview
+This Python script checks your internet speed using Speedtest.net and tweets at your internet service provider (ISP) if the actual speed is below the promised speed. It utilizes Selenium to automate the speed test process and Twitter login.
+
+## Prerequisites
+- Python 3.x
+- Selenium (`pip install selenium`)
+- ChromeDriver (for Selenium)
+
+## Configuration
+1. Set up a Twitter account for the bot to use.
+2. Replace `"YOUR_TWITTER_EMAIL"` and `"YOUR_TWITTER_PASSWORD"` with your Twitter login credentials.
+3. Set the promised internet speeds (`PROMISED_DOWN` and `PROMISED_UP`) according to your internet plan.
+4. Specify the path to ChromeDriver (`CHROME_DRIVER_PATH`).
+
+## Usage
+1. Run the Python script `internet_speed_twitter_bot.py`.
+2. The bot will perform a speed test using Speedtest.net and tweet at your ISP if the actual speed is below the promised speed.
+3. The tweet will mention the ISP and include the actual and promised speeds.
+
+## Notes
+- Adjust the sleep times in the script as needed to ensure proper synchronization with webpage loading and element interactions.
+- Customize the tweet message according to your preferences or requirements.
+- This script is for educational and personal use only. Use it responsibly and respect Twitter's terms of service.
+
+## Disclaimer
+This project is for educational purposes only. The developer does not bear any responsibility for the misuse of this script for unauthorized activities or any consequences resulting from such misuse.
+
+---
